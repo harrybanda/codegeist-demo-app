@@ -6761,6 +6761,16 @@ jest@26.6.0:
     import-local "^3.0.2"
     jest-cli "^26.6.0"
 
+js-md5@^0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/js-md5/-/js-md5-0.7.3.tgz#b4f2fbb0b327455f598d6727e38ec272cd09c3f2"
+  integrity sha512-ZC41vPSTLKGwIRjqDh8DfXoCrdQIyBgspJVPXHBGu4nZlAEvG3nf+jO9avM9RmLiGakg7vz974ms99nEV0tmTQ==
+
+js-sha1@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/js-sha1/-/js-sha1-0.6.0.tgz#adbee10f0e8e18aa07cdea807cf08e9183dbc7f9"
+  integrity sha512-01gwBFreYydzmU9BmZxpVk6svJJHrVxEN3IOiGl6VO93bVKYETJ0sIth6DASI6mIFdt7NmfX9UiByRzsYHGU9w==
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -9130,10 +9140,10 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
-react-bug-trap@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/react-bug-trap/-/react-bug-trap-1.0.6.tgz#fb4c8b9e5dc3c751654d617cd1b1eee9cef37d97"
-  integrity sha512-e6uBYREXTcMkTfz5+RXuIqWvsOUBijjTvWTMxRyy0ArJIINuZBzlcGdFCE7PrPNczOzZH8f44pvTN5KOqtxZSg==
+react-bug-trap@^1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/react-bug-trap/-/react-bug-trap-1.1.8.tgz#d8ca807c6359138ea395dbe26c01f02bc7a6aee5"
+  integrity sha512-Scz8/UD4vknI/fWr0JlOfbFXEWRI+IcuBDsX0L+cBpE+r6hsmwTMfb+CTAK9s771qJCu/tIfyKVH6ZsasWLo2A==
   dependencies:
     "@fingerprintjs/fingerprintjs" "^3.3.0"
     axios "^0.21.4"
@@ -9142,6 +9152,8 @@ react-bug-trap@^1.0.6:
     prop-types "^15.7.2"
     react-device-detect "^1.17.0"
     stacktrace-js "^2.0.2"
+    uuid "^8.3.2"
+    uuid-by-string "^3.0.4"
 
 react-dev-utils@^11.0.3:
   version "11.0.4"
@@ -11146,12 +11158,20 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
+uuid-by-string@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/uuid-by-string/-/uuid-by-string-3.0.4.tgz#761cf7f6e4314f841bfc014a8f517daa61080bc1"
+  integrity sha512-kkzMtWXvFLYEV2ycn2RalaA61BbNboBaSxFQugZl3djr2ZLpEc9BRWBVQTibJWdjGtBKwrKiFm3+D8n8kv2eUw==
+  dependencies:
+    js-md5 "^0.7.3"
+    js-sha1 "^0.6.0"
+
 uuid@^3.3.2, uuid@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
-uuid@^8.3.0:
+uuid@^8.3.0, uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==

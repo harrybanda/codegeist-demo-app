@@ -1,8 +1,10 @@
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { withRouter } from "react-router-dom";
 
 function LoginPage(props) {
   const { register, handleSubmit } = useForm();
+  const [openDialog, setOpenDialog] = useState(false);
 
   const onSubmit = (values) => {
     const apiMockData = {
@@ -14,6 +16,10 @@ function LoginPage(props) {
       pathname: "/home",
       apiMockData,
     });
+  };
+
+  const FogotPasswordDialog = () => {
+    throw new Error("Failed to open Dialog");
   };
 
   return (
@@ -50,6 +56,20 @@ function LoginPage(props) {
               </p>
             </div>
           </form>
+          <br />
+          <div className="field">
+            <p className="control">
+              <button
+                className="button is-link is-outlined"
+                onClick={() => {
+                  setOpenDialog(true);
+                }}
+              >
+                Forgot Password?
+              </button>
+            </p>
+          </div>
+          {openDialog === true ? <FogotPasswordDialog /> : <div></div>}
         </div>
       </div>
     </section>
